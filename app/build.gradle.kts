@@ -44,8 +44,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.test.ext:junit-ktx:1.1.5")
-    implementation("androidx.test:runner:1.5.2")
+
     val lifecycle_version = "2.6.2"
     val arch_version = "2.2.0"
     val coroutines_version = "1.7.3"
@@ -60,18 +59,7 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    // optional - Test helpers for LiveData
-    testImplementation("androidx.arch.core:core-testing:$arch_version")
-    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
-    // optional - Test helpers for Lifecycle runtime
-    androidTestImplementation ("androidx.lifecycle:lifecycle-runtime-testing:$lifecycle_version")
-    testImplementation ("com.google.truth:truth:1.1.4")
-    testImplementation ("com.google.truth.extensions:truth-java8-extension:1.1.3")
-    androidTestImplementation("org.mockito:mockito-core:2.25.0")
+
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
     // ViewModel utilities for Compose
@@ -112,5 +100,37 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:$logging_version")
 
     implementation("com.github.bumptech.glide:glide:$glide_version")
+
+
+//    test Implementations
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("androidx.test.ext:junit:1.1.5")
+    testImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    // optional - Test helpers for LiveData
+    testImplementation("androidx.arch.core:core-testing:$arch_version")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    // optional - Test helpers for Lifecycle runtime
+    testImplementation ("androidx.lifecycle:lifecycle-runtime-testing:$lifecycle_version")
+    testImplementation ("com.google.truth:truth:1.1.4")
+    testImplementation ("com.google.truth.extensions:truth-java8-extension:1.1.3")
+    testImplementation("org.mockito:mockito-core:2.25.0")
+    testImplementation("androidx.test.ext:junit-ktx:1.1.5")
+    testImplementation("androidx.test:runner:1.5.2")
+//    testImplementation("org.robolectric:robolectric:4.4")
+
+
+    androidTestImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    // optional - Test helpers for LiveData
+    androidTestImplementation("androidx.arch.core:core-testing:$arch_version")
+    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    // optional - Test helpers for Lifecycle runtime
+    androidTestImplementation ("androidx.lifecycle:lifecycle-runtime-testing:$lifecycle_version")
+    androidTestImplementation ("com.google.truth:truth:1.1.4")
+    androidTestImplementation ("com.google.truth.extensions:truth-java8-extension:1.1.3")
+    androidTestImplementation("org.mockito:mockito-core:2.25.0")
+    androidTestImplementation("androidx.test.ext:junit-ktx:1.1.5")
+    androidTestImplementation("androidx.test:runner:1.5.2")
 
 }
